@@ -5,13 +5,188 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+<style>
+    * {margin: 0;padding: 0; box-sizing: border-box; color: #fff;}
+    a:link, a:visited {color:#fff; text-decoration: none;}
+    body { background:#386280;}
+    
+    .about {}
+    .about>div>div:nth-child(1) {font-size: 20px;}
+    .about>div>div:nth-child(2) {font-size: 16px;}
+    .about h4, .skills h4 {color: rgb(255, 228, 73);}
+
+    .skills>div>div:nth-child(1) {font-size: 20px;}
+    .skills>div>div:nth-child(2) {font-size: 16px;}
+
+
+    svg {transition:transform .5s ease-out;}
+    
+    /* #svgWrap path:nth-child(1) {
+        
+        stroke-linecap:round;
+        stroke-dasharray: 1440;
+        stroke-dashoffset: 1440;
+        animation: txt-html 3s linear forwards;
+    }
+
+    @keyframes txt-html {
+        0% {stroke-dashoffset: 1440;}
+        100% {stroke-dashoffset: 0;}
+    } */
+</style>
 <body>
-    <svg width="270" height="81" viewBox="0 0 270 81" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-            d="M59.6572 78.5H62.1572V76V5V2.5H59.6572H50.2301H47.7301V5V33.0261H16.8782V5V2.5H14.3782H5H2.5V5V76V78.5H5H14.3782H16.8782V76V45.682H47.7301V76V78.5H50.2301H59.6572ZM123.986 15.2047H126.486V12.7047V5V2.5H123.986H68.9865H66.4865V5V12.7047V15.2047H68.9865H89.2969V76V78.5H91.7969H101.126H103.626V76V15.2047H123.986ZM148.97 4.06885L148.34 2.5H146.649H134.536H132.036V5V76V78.5H134.536H143.914H146.414V76V48.351V48.3119L146.413 48.2729L145.921 32.5184L163.969 76.941L164.602 78.5H166.285H173.465H175.148L175.781 76.9406L193.905 32.3122L193.435 48.2773L193.434 48.3141V48.351V76V78.5H195.934H205.312H207.812V76V5V2.5H205.312H193.15H191.459L190.829 4.06885L169.9 56.2192L148.97 4.06885ZM267.5 68.3441V65.8441H265H233.797V5V2.5H231.297H221.87H219.37V5V76V78.5H221.87H265H267.5V76V68.3441Z"
-            stroke="white" stroke-width="5" />
-    </svg>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="./">
+              <h3>Resume</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="company.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SKILLS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">PORTFOLIO</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container mb-3">
+        <img src="images/id.PNG" alt="id" class="img-pluid" style="max-width:300px">
+    </div>
+    <div class="container about mb-5">
+        <h4>ABOUT</h4>
+        <div class="row d-flex align-items-center text-white">
+            <div class="col-md-3">Intro</div>
+            <div class="col-md-9">
+                Frontend 지원자 김민길입니다<br>
+            </div>
+        </div>
+        <div class="row d-flex align-items-center text-white">
+            <div class="col-md-3">Contact</div>
+            <div class="col-md-9">
+                Email : nissyou@naver.com
+            </div>
+        </div>
+        <div class="row d-flex align-items-center text-white">
+            <div class="col-md-3"></div>
+            <div class="col-md-9 offset-md-3">
+                <a href="https://github.com/min-way">Github : https://github.com/min-way</a>
+            </div>
+        </div>
+    </div>
+    <div class="container skills mb-5">
+        <h4>SKILLS</h4>
+        <div class="row d-flex align-items-center text-white">
+            <div class="col-md-3">Frontend</div>
+            <div class="col-md-9">
+                HTML5 , CSS3 
+            </div>
+        </div>
+        <div class="row d-flex align-items-center text-white">
+            <div class="col-md-3"></div>
+            <div class="col-md-9">
+                Javascript, jQuery
+            </div>
+        </div>
+        <div class="row d-flex align-items-center text-white">
+            <div class="col-md-3"></div>
+            <div class="col-md-9">
+                Gnuboard5
+            </div>
+        </div>
+        <div class="row d-flex align-items-center text-white mb-3">
+            <div class="col-md-3"></div>
+            <div class="col-md-9">
+                Vue.js
+            </div>
+        </div>
+        <div class="row d-flex align-items-center text-white">
+            <div class="col-md-3">Designtool</div>
+            <div class="col-md-9">
+                Illustrator
+            </div>
+        </div>
+        <div class="row d-flex align-items-center text-white">
+            <div class="col-md-3"></div>
+            <div class="col-md-9">
+                Photoshop
+            </div>
+        </div>
+        <div class="row d-flex align-items-center text-white">
+            <div class="col-md-3"></div>
+            <div class="col-md-9">
+                Figma
+            </div>
+        </div>
+    </div>
+    <div class="container about mb-5">
+        <h4>Education</h4>
+        <div class="row d-flex align-items-center text-white">
+            <div class="col-md-3">Training course</div>
+            <div class="col-md-9">
+                교육명 : UI/UX 웹디자인 웹 퍼블리셔
+            </div>
+        </div>
+        <div class="row d-flex align-items-center text-white">
+            <div class="col-md-3"></div>
+            <div class="col-md-9">
+                교육기간 : 2021.01.11 ~ 2021.07.07
+            </div>
+        </div>
+    </div>
+    <div class="container about mb-5">
+        <h4>Portfolio</h4>
+        <div class="row d-flex align-items-center text-white">
+            <div class="col-md-4 bg-light">111</div>
+            <div class="col-md-4 bg-light">222</div>
+            <div class="col-md-4 bg-light">333</div>
+        </div>
+    </div>
+
+
+    <footer>
+        
+    </footer>
+    
+        
         
 </body>
+<script>
+    $(document).ready(function(){
+      const paths = $("#svgWrap").find("path");
+      const pathsLength = paths.length;
+
+      console.log(pathsLength);
+
+      for(let i = 0;i<pathsLength;i++){
+        const total_length = paths.get(i).getTotalLength();
+        console.log(total_length);
+        paths.get(i).style.strokeDasharray = total_length;
+        paths.get(i).style.strokeDashoffset = total_length;
+
+        $(paths.get(i)).animate({"strokeDashoffset":0},2000);
+      }
+
+      });
+
+  </script>
+
+
 </html>
