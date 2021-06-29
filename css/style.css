@@ -5,14 +5,33 @@
     a:hover {text-decoration: underline;}
     body { background:#386280;}
     
+    
     .about div, .skills div, .education div  {color: #fff;}
     .about>div>div:nth-child(1) {font-size: 20px;}
-    .about>div>div:nth-child(2) {font-size: 16px;}
+    .about>div>div:nth-child(2) {font-size: 18px; line-height: 30px;}
     .about h4, .skills h4, .education h4, .portfolio h4 {color: rgb(255, 228, 73);}
 
     .skills>div>div:nth-child(1) {font-size: 20px;}
-    .skills>div>div:nth-child(2) {font-size: 16px;}
+    .skills>div>div:nth-child(2) {font-size: 18px; line-height: 30px;}
+
+    .education>div>div:nth-child(1) {font-size: 20px;}
+    .education>div>div:nth-child(2) {font-size: 18px; line-height: 30px;}
     
+    
+    .graph {width: 30%; background: #fff; border-radius: 3px;}
+    .graph span {width: 0; background: rgb(255, 228, 73); color: #777; font-size: 12px; line-height: 20px; border-radius: 3px 0 0 3px;}
+    .graph .graph-90 {animation: graph-90 3s forwards 0.3s;}
+    .graph .graph-80 {animation: graph-80 3s forwards;}
+    .graph .graph-70 {animation: graph-70 3s forwards;}
+    .graph .graph-60 {animation: graph-60 3s forwards;}
+    .graph .graph-50 {animation: graph-50 3s forwards;}
+  
+    @keyframes graph-90 { 0% {width: 0;} 100% {width: 90%;} }
+    @keyframes graph-80 { 0% {width: 0;} 100% {width: 80%;} }
+    @keyframes graph-70 { 0% {width: 0;} 100% {width: 70%;} }
+    @keyframes graph-60 { 0% {width: 0;} 100% {width: 60%;} }
+    @keyframes graph-50 { 0% {width: 0;} 100% {width: 50%;} }
+
     .portfolio .card {position: relative; overflow: hidden; cursor: pointer;}
     .portfolio .card-title {font-size: 18px;}
     .portfolio .card-text {font-size: 14px;}
