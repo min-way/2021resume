@@ -17,7 +17,7 @@ body {background:#386280;}
 .portfolio .card-title {font-size: 18px;}
 .portfolio .card-text {font-size: 14px;}
 .portfolio .card-footer {transition: transform 0.5s ease-out; height: 49px; position: absolute; bottom: 0; left: 0; width: 100%;}
-.bright50 {filter:brightness(50%); }
+.bright50 {filter:brightness(50%);}
 .card-img-top {transition: 1s;}
 
 .show-card {animation: show-card forwards 0.5s}
