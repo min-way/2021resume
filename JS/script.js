@@ -16,10 +16,10 @@ $(document).ready(function(){
       $(".card").hover(function(){
           $(this).find(".card-footer").removeClass("hide-card");
           $(this).find(".card-footer").addClass("show-card");
-          $(this).find(".card-img-top").addClass("bright50");
+          $(this).find(".card-img-top").css({'filter':'brightness(0.5)'});
         },function(){
             $(this).find(".card-footer").removeClass("show-card");
             $(this).find(".card-footer").addClass("hide-card");
-            $(this).find(".card-img-top").removeClass("bright50");
+            $(this).find(".card-img-top").css({'filter':'brightness(1)'});
       });
     });
