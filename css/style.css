@@ -9,14 +9,14 @@ body {background:#386280;}
 
 .skills>div>div:nth-child(1) {font-size: 20px;}
 .skills>div>div:nth-child(2) {font-size: 18px; line-height: 30px;}
-.table thead th {border-bottom: 1px solid #dee2e6; padding: 0 .75rem .75rem 0;}
+.table thead th {border-bottom: 1px solid #dee2e6; padding: 0 .75rem .45rem 0;}
 .table td {padding: .45rem .45rem .45rem 0;}
 .table th {font-weight: inherit; padding: .45rem 2.45rem .45rem 0;}
 
 .education>div>div:nth-child(1) {font-size: 20px;}
 .education>div>div:nth-child(2) {font-size: 18px; line-height: 30px;}
 
-.portfolio .card {position: relative; overflow: hidden; cursor: pointer;}
+.card {position: relative; overflow: hidden; cursor: pointer;}
 .portfolio .card-title {font-size: 18px;}
 .portfolio .card-text {font-size: 14px;}
 .portfolio .card-footer {transition: transform 0.5s ease-out; height: 49px; position: absolute; bottom: 0; left: 0; width: 100%;}
